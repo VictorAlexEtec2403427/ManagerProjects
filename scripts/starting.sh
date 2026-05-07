@@ -13,7 +13,8 @@ apk add git
 git config --global user.name "VictorAlexEtec2403427"
 git config --global user.name "victor.gouveia@aluno.cps.sp.gov.br"
 
-git clone https://github.com/VictorAlexEtec24034/PAM
+cd ./projects
+git clone https://github.com/VictorAlexEtec2403427/PAM
 
 
 chsh -s /bin/bash
