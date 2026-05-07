@@ -1,0 +1,23 @@
+services:
+  Linux_Manager:
+    image: alpine:3.22
+    container_name: terminal
+    tty: true
+    stdin_open: true
+    working_dir: /home
+    command: /bin/sh
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./scripts:/home/scripts
+      - ./projects:/home/projects
+    networks:
+      - VAMGnet
+
+# A seção networks deve ficar na "raiz" do arquivo, fora de services
+networks:
+  VAMGnet:
+    driver: bridge
+
+volumes:
+  scripts:
