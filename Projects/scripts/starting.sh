@@ -22,8 +22,7 @@ npm install -g yarn
 bun install -g expo@55.0
 bun install -g create-expo-app
 
-cd ..
-cd ./vamg
+cd /home/vamg
 mkdir projects
 cd projects
 git clone https://github.com/VictorAlexEtec2403427/PAM

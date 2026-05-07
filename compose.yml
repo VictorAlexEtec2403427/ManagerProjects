@@ -9,8 +9,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./scripts:/home/scripts:z
-      - ./Projects:/home:z
+      - ./Projects:/home/Projects:z
     networks:
       - VAMGnet
 
