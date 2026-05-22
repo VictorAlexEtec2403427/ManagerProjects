@@ -1,0 +1,1 @@
+print("Olá mundo vindo do container docker")

@@ -1,0 +1,22 @@
+services:
+  gcc:
+    image: gcc:4.9
+    working_dir: /home
+    # stdin_open: true
+    # tty: true
+
+    volumes:
+      - ./Playground/GCC/app:/home:Z
+
+    command: sh -c "gcc index.c -o program && ./program"
+
+  python:
+    image: python:3.13-alpine
+    working_dir: /home
+    # stdin_open: true
+    # tty: true
+
+    volumes:
+      - ./Playground/Python/app:/home:Z
+
+    command: python main.py
