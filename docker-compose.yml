@@ -2,8 +2,8 @@ services:
   gcc:
     image: gcc:4.9
     working_dir: /home
-    # stdin_open: true
-    # tty: true
+    stdin_open: true
+    tty: true
 
     volumes:
       - ./Playground/GCC/app:/home:Z
@@ -13,8 +13,8 @@ services:
   python:
     image: python:3.13-alpine
     working_dir: /home
-    # stdin_open: true
-    # tty: true
+    stdin_open: true
+    tty: true
 
     volumes:
       - ./Playground/Python/app:/home:Z
